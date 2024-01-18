@@ -7,3 +7,27 @@
 
 # TODO: Send out and retrieve job results download URL:
 #   - Using requests, send to https://seq2fun.dcmb.med.umich.edu/ResQ/resq.cgi.
+
+import requests, re
+
+url = "https://seq2fun.dcmb.med.umich.edu/ResQ/resq.cgi"
+
+# Read pdb file
+protein_name = 'AF-5SZQ'
+with open(f'/capstone/struct_pred/input_files/{protein_name}/{protein_name}.pdb', 'r') as f:
+    pdb_data = f.read()
+
+payload = {
+    'file1': pdb_data,  # Paste your pdb data here
+    'REPLY-E-MAIL': 'myemail@gmail.com',  # Provide your email here
+    'TARGET-NAME': protein_name  # provide the protein name here
+}
+
+response = requests.post(url, data=payload)
+
+match = re.search(r'url=(.*)">', response.text)
+if match:
+    results_url = match.group(1)
+    print('Your results will be available at:', results_url)
+else:
+    print('Results URL not found in the server response.')
