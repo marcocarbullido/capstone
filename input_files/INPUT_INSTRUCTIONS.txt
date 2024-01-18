@@ -1,1 +1,0 @@
-Place all PDB files to be used as input inside this folder (capstone/input_files/EXAMPLE.pdb)
