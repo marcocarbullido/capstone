@@ -56,4 +56,4 @@ input_dir = prepare_alphafold_input()
 recycles_trials = [5, 10, 15, 20]
 for n_recycles in recycels_trials:
     result_dir = os.path.join(parent_dir, 'files', f'alphafold_output_{n_recycles}')
-    alphafold_predict(input_dir, result_dir, n_recycles=3):
+    alphafold_predict(input_dir, result_dir, n_recycles=n_recycles):
