@@ -6,6 +6,8 @@ from colabfold.utils import setup_logging
 from pathlib import Path
 
 # DO NOT EXECUTE THIS FILE. TODO: REWRITE PREDICT FUNCTION FOR LOCALCOLABFOLD
+# GO TO https://colab.research.google.com/github/konstin/ColabFold/blob/main/batch/AlphaFold2_batch.ipynb#scrollTo=iccGdbe_Pmt9
+# ^ THIS CONTAINS THE CORRECT CODE ^
 
 def prepare_alphafold_input(parent_dir):
     alphafold_input_dir = os.path.join(parent_dir, 'files', 'alphafold_input')
