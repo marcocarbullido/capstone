@@ -29,8 +29,8 @@ def alphafold_predict(input_dir, result_dir, n_recycles=3):
     #@markdown --- (from https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/batch/AlphaFold2_batch.ipynb)
     #@markdown ### Advanced settings
     msa_mode = "MMseqs2 (UniRef+Environmental)" #@param ["MMseqs2 (UniRef+Environmental)", "MMseqs2 (UniRef only)","single_sequence","custom"]
-    num_models = 5 #@param [1,2,3,4,5] {type:"raw"}
-    num_recycles = n_recycles #@param [1,3,6,12,24,48] {type:"raw"}
+    num_models = 2
+    num_recycles = n_recycles
     stop_at_score = 100 #@param {type:"string"}
     #@markdown - early stop computing models once score > threshold (avg. plddt for "structures" and ptmscore for "complexes")
     use_custom_msa = False
@@ -105,7 +105,7 @@ def alphafold_predict(input_dir, result_dir, n_recycles=3):
         model_type="auto",
         num_models=num_models,
         num_recycles=n_recycles,
-        model_order=[1, 2, 3, 4, 5],
+        model_order=[1, 2],
         is_complex=is_complex,
         data_dir=default_data_dir,
         keep_existing_results=do_not_overwrite_results,
