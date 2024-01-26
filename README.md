@@ -7,5 +7,5 @@ See the work of our Advisor, Dr. Ramgopal Mettu, below:
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5321161/
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10483696/
 
-For more information on AlphaFold2, see below:
+For more information on AlphaFold2, see:
 https://github.com/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb
