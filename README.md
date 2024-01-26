@@ -6,3 +6,6 @@ Currently exploring methods for b-factor prediction using AF2 outputs. Working t
 See the work of our Advisor, Dr. Ramgopal Mettu, below: 
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5321161/
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10483696/
+
+For more information on AlphaFold2, see below:
+https://github.com/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb
