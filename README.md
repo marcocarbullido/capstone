@@ -1,5 +1,5 @@
 # capstone
-Capstone for using 3D protein structure prediction for epitope prediction by considering structural constraints on antigen processing.
+Capstone for using protein 3D structure prediction for epitope prediction by considering structural constraints on antigen processing.
 
 Currently exploring methods for b-factor prediction using AF2 outputs. Working towards a straightforward solution to generating epitope predictions given an antigen sequence.
 
